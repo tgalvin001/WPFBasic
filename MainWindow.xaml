@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPFBasic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBasic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Border Padding="10">
+        <StackPanel>
+            <!--Buttons -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Margin="0,0,10,0" Grid.Column="0" Content="Apply" />
+                <Button Grid.Column="1" Content="Reset" />
+                <Button Margin="10,0,0,0" Grid.Column="2" Content="Refresh" />
+            </Grid>
+            <TextBlock Margin="0,10,0,10" FontWeight="Bold" Text="Pulse Properties" />
+            <TextBlock Text="Description" />
+            <TextBox Padding="2"/>
+            <Grid>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                    <TextBlock Text="Status"/>
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Revision"/>
+                    <TextBox Padding="2"/>
+                </StackPanel>
+                
+            </Grid>
+            <TextBlock Text="Part Number" />
+            <TextBox Padding="2"/>
+        </StackPanel>
+    </Border>
+</Window>
