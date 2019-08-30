@@ -18,7 +18,7 @@
 
                 <Button Click="ApplyMessage_Click" Margin="0,0,10,0" Grid.Column="0" Content="Apply" />
                 <Button Click="ResetFields_Click" Grid.Column="1" Content="Reset" />
-                <Button Margin="10,0,0,0" Grid.Column="2" Content="Refresh" />
+                <Button Click="SelectClicked" Margin="10,0,0,0" Grid.Column="2" Content="Select" />
               
             </Grid>
             <TextBlock Margin="0,10,0,10" FontWeight="Bold" Text="Pulse Properties" />
@@ -33,17 +33,17 @@
                 
                 <StackPanel Grid.Column="0" Margin="0,0,10,0">
                     <TextBlock Text="PartNumber"/>
-                    <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+                    <TextBox Name="PartNumberTextField"  Padding="2"/>
                 </StackPanel>
                 
                 <StackPanel Grid.Column="1">
                     <TextBlock Text="Manufacutrer"/>
-                    <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+                    <TextBox Name="ManufacutrerTextField"  Padding="2"/>
                 </StackPanel>
                 
             </Grid>
             <TextBlock Text="Descripton" />
-            <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+            <TextBox Name="DesciptionTextFiled"  Padding="2"/>
         </StackPanel>
     </Border>
 </Window>
