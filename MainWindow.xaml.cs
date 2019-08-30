@@ -24,5 +24,21 @@ namespace WPFBasic
         {
             InitializeComponent();
         }
+
+        private void ApplyMessage_Click(object sender, RoutedEventArgs e)
+        {
+            if(GCCLNumber.Text.Length < 1)
+            {
+                MessageBox.Show("Descirption is empty");
+                
+            }
+            else         
+            MessageBox.Show(GCCLNumber.Text);
+        }
+
+        private void ResetFields_Click(object sender, RoutedEventArgs e)
+        {
+            GCCLNumber.Clear();
+        }
     }
 }
