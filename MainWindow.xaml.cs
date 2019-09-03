@@ -92,14 +92,13 @@ namespace WPFBasic
                     }
                     if(DesciptionTextFiled.Text != string.Empty)
                     {
-                        query = query.Where(s => s.Description == DesciptionTextFiled.Text);
+                        //query = query.Where(s => s.Description == DesciptionTextFiled.Text);
+                        query = query.Where(s => s.Description.Contains(DesciptionTextFiled.Text));                    
                     }
                     var queryResult = query.ToList<GCCL>();
 
-                    foreach(GCCL sl in queryResult)
-                    {
-                        MessageBox.Show(sl.Description);
-                    }                                      
+                    ReportWindow secWindow = new ReportWindow(queryResult);
+                    secWindow.Show();
              }           
         }
     }
