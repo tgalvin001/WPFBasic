@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ReportWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Name="TextBlock1" Text="HEY I am a subWindow" />
+        <TextBlock Name="TextBlock1" Text="" />
        
     </Grid>
 </Window>

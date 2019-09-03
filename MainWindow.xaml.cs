@@ -91,8 +91,7 @@ namespace WPFBasic
                         query = query.Where(s => s.Manufacturer == ManufacutrerTextField.Text);
                     }
                     if(DesciptionTextFiled.Text != string.Empty)
-                    {
-                        //query = query.Where(s => s.Description == DesciptionTextFiled.Text);
+                    {                       
                         query = query.Where(s => s.Description.Contains(DesciptionTextFiled.Text));                    
                     }
                     var queryResult = query.ToList<GCCL>();

@@ -33,7 +33,7 @@ namespace WPFBasic
                 PrintString.Append(id.GCCL1 + " " + id.Description);
                 PrintString.Append("\n");
             }
-            //MessageBox.Show(PrintString);
+            
             TextBlock1.Text = PrintString.ToString();
            
         }
